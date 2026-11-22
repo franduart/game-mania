@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acesse sua conta de demonstração Game Mania.">
+  <title>Entrar | Game Mania</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/login.js" defer></script>
+</head>
+<body class="login-page">
+  <a class="skip-link" href="#login-main">Pular para o formulário</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">
+         <span class="brand-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-gamepad-2 preview-icon">
+              <line x1="6" x2="10" y1="11" y2="11" />
+              <line x1="8" x2="8" y1="9" y2="13" />
+              <line x1="15" x2="15.01" y1="12" y2="12" />
+              <line x1="18" x2="18.01" y1="10" y2="10" />
+              <path
+                d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+            </svg></span>
+      </span><span>GAME <strong>MANIA</strong></span></a>
+      <nav class="main-nav login-nav" aria-label="Navegação principal"><a href="index.html">← Voltar à loja</a></nav>
+    </div>
+  </header>
+  <main class="login-main container" id="login-main">
+    <section class="login-intro">
+      <p class="eyebrow">Crie sua conta e aproveite</p>
+      <h1>Entre no jogo.</h1>
+      <p>Cadastre-se e entre no universo Game Mania.</p>
+      <div class="login-illustration" aria-hidden="true">
+        <img src="assets/controle.png" alt="controle" class="controle-animation">
+      </div>
+    </section>
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="login-symbol" aria-hidden="true">
+         <span class="brand-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-gamepad-2 preview-icon">
+              <line x1="6" x2="10" y1="11" y2="11" />
+              <line x1="8" x2="8" y1="9" y2="13" />
+              <line x1="15" x2="15.01" y1="12" y2="12" />
+              <line x1="18" x2="18.01" y1="10" y2="10" />
+              <path
+                d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+            </svg></span>
+      </div>
+      <h2 id="login-title">Cadastre-se</h2>
+      <p class="muted">Preencha os campos</p>
+      <form id="login-form" novalidate>
+        <div class="form-field">
+          <label for="nome">Nome</label>
+          <input id="nome" name="email" type="email" autocomplete="off" placeholder="nome completo" aria-describedby="email-error" required>
+          <small class="field-error" id="nome-error"></small>
+        </div>
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="off" placeholder="voce@exemplo.com" aria-describedby="email-error" required>
+          <small class="field-error" id="email-error"></small>
+        </div>
+        <div class="form-field">
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" autocomplete="off" placeholder="Digite sua senha" aria-describedby="password-error" required>
+          <small class="field-error" id="password-error"></small>
+        </div>
+         <div class="form-field">
+          <label for="password">Confirme a sua senha</label>
+          <input id="password" name="password" type="password" autocomplete="off" placeholder="Digite sua senha" aria-describedby="password-error" required>
+          <small class="field-error" id="password-error"></small>
+        </div>
+        <button class="button button-primary button-submit" type="submit">cadastrar</button>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+      <div class="login-divider"><span>ou</span></div>
+      <a class="button button-outline button-submit" href="index.html">Continuar explorando a loja</a>
+      <p class="muted signup-note">Já possui uma conta? <a href="login">Entrar na conta</a></p>
+    </section>
+  </main>
+  <footer class="copyright login-copyright">© 2026 Game Mania</footer>
+</body>
+</html>
