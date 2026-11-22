@@ -1,5 +1,10 @@
 # Documentação do Projeto
 
+
+  ![Página inicial](evidencias/sessao-hero.png)
+  ![Página inicial](evidencias/responsivo-tablet.png)
+
+
 ## 1. Identificação do estudante
 
 - Nome: Francieli Batista Duarte
